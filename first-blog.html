@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choosing the Right Hairstyle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond';
+            font-weight: 300;
+        }
+
+        header {
+            background-color: #2c4f44;
+            padding: 1px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative; 
+            margin-bottom: 20px; 
+            box-sizing: border-box; 
+        }
+
+        nav::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #b18b67 100%, transparent 100%, transparent 50%, #cd7f32 50%);
+            background-size: 200% 100%;
+            position: absolute;
+            bottom: -22px; 
+            left: 0;
+            animation: borderAnimation 2s linear infinite;
+        }
+
+        @keyframes borderAnimation {
+            0%, 25% {
+                background-position: 0% 0%;
+            }
+            50%, 75% {
+                background-position: 100% 0%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        .logo-link {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-link img {
+            margin-right: 10px;
+        }
+
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .navlogo {
+            max-width: 150px;
+            margin-right: 10px;
+        }
+
+        .logo-container h1 {
+            color: white;
+            margin: 0;
+            font-size: 35px;
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 10px;
+        }
+
+        .blog-container {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 30px;
+            border: 5px solid black; 
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .blog-container h2 {
+            color: black;
+            margin-top: 20px;
+            font-size: 1.8em;
+            font-weight: 400;
+        }
+
+        .author {
+            font-style: italic;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .blog-content {
+            font-size: 19px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .face-shape-image, .hairstyle-image {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            margin: 20px 0;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #2c4f44 0%, #1a2e28 100%);
+            color: #ffffff;
+            padding: 20px 10px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .footer-logo img {
+            max-width: 40%;
+            height: auto;
+        }
+
+        .logolink {
+            text-decoration: none;
+        }
+
+        .vertical-line {
+            height: 18em;
+            width: 2px;
+            background-color: white;
+            margin-left: -6em;
+            margin-right: 2em;
+            margin-bottom: -2.5em;
+        }
+
+        .site-title {
+            font-size: 1.8em;
+            color: white;
+            text-align: center; 
+            margin-top: 10px; 
+            font-weight: 200;
+        }
+
+        .footer-links, .footer-contact, .footer-social-media {
+            flex: 1;
+            min-width: 150px;
+            margin: 10px;
+            font-size: 1.1em;
+        }
+
+        .footer-links, .footer-contact, .footer-social-media {
+        }
+        
+
+        .footer-links h2, .footer-contact h2, .footer-social-media h2 {
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .footer-social-media ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-social-media li {
+            list-style-type: none;
+            margin-bottom: -0.5em;
+            margin-left: -0.6em;
+        }
+
+        .footer-links a, .footer-social-media a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover::after {
+            width: 120%;
+            left: -10%;
+        }
+
+        .footer-social-media a {
+            position: relative;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a {
+            position: relative;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .footer-links a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+
+        .footer-social-media a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .footer-social-media a:hover::after {
+            width: 120%;
+            left: -10%;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .horizontal-line {
+            display: none;
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            margin: 15px 0;
+        }
+
+        .footer-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 1300px) and (min-width: 750px) {
+
+            .vertical-line {
+                height: 18em;
+                width: 2px;
+                background-color: white;
+                margin-left: 2em;
+                margin-right: 5em;
+                margin-bottom: -2.5em;
+            }
+
+            .footer-logo img {
+                max-width: 80%;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .footer-container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .footer-logo  {
+                max-width: 60%;
+                margin-top: 3em;
+            }
+
+            .footer-logo img {
+                max-width: 80%;
+            }
+
+            .vertical-line {
+                height: 18em;
+                width: 2px;
+                background-color: white;
+                margin-left: 2em;
+                margin-right: 5em;
+                margin-bottom: -2.5em;
+            }
+
+            .site-title {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-logo {
+                margin-bottom: 15px;
+            }
+
+            .footer-logo img {
+                max-width: 50%;
+            }
+
+            .vertical-line {
+                display: none;
+            }
+
+            .site-title {
+                text-align: center;
+                margin-top: 10px; 
+            }
+
+            .footer-links, .footer-contact, .footer-social-media {
+                margin: 15px 0;
+                text-align: center;
+            }
+
+            .horizontal-line {
+                display: block; 
+            }
+        }
+
+        .footer-social-media a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #ccc; 
+        }
+
+        @media (min-width: 850px) and (max-width: 1280px) {
+            .footer-social-media {
+                margin-left: 45px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="landing.html" class="logo-link">
+                    <img src="logo.png" alt="Logo" class="navlogo">
+                    <h1>STYLISHNEST</h1>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="blog-container">
+            <img src="X.png" alt="Hairstyle" class="blog-image">
+            <h1>Choosing the Right Hairstyle</h1>
+            <p class="author">By Kelvin Rhay M. Dela Cruz</p>
+            <p class="blog-content">
+                When it comes to personal style, few things have as much impact as a great hairstyle. 
+                Whether you're looking for a subtle change or a dramatic transformation, selecting the right hairstyle is crucial for expressing your personality and complementing your face shape. 
+                In this post, we’ll explore how to choose a hairstyle that works for you, taking into account your face shape, personality, and lifestyle.
+            </p>
+            <h2>Understanding Face Shapes</h2>
+            <p class="blog-content">
+                The first step in selecting the perfect hairstyle is understanding your face shape. The five most common face shapes are:
+                <ul>
+                    <li>
+                        <strong>Oval</strong>: Characterized by balanced proportions, an oval face can pull off almost any hairstyle.
+                        <img src="X.png" alt="Oval Face Shape" class="face-shape-image">
+                    </li>
+                    <li>
+                        <strong>Round</strong>: With equal width and length, round faces benefit from styles that add height and elongate the face.
+                        <img src="X.png" alt="Round Face Shape" class="face-shape-image">
+                    </li>
+                    <li>
+                        <strong>Square</strong>: Defined by a strong jawline and broad forehead, square faces look great with hairstyles that soften the angles.
+                        <img src="X.png" alt="Square Face Shape" class="face-shape-image">
+                    </li>
+                    <li>
+                        <strong>Heart</strong>: Heart-shaped faces have a wider forehead and a narrower chin.
+                        <img src="X.png" alt="Heart Face Shape" class="face-shape-image">
+                    </li>
+                    <li>
+                        <strong>Long</strong>: Long faces are characterized by a longer chin and forehead.
+                        <img src="X.png" alt="Long Face Shape" class="face-shape-image">
+                    </li>
+                </ul>
+            </p>
+            <h2>Reflecting Your Personality</h2>
+            <p class="blog-content">
+                Your hairstyle should not only complement your face shape but also reflect your personality. 
+                Consider these styles based on personality traits:
+                <ul>
+                    <li>
+                        <strong>Classic and Timeless</strong>: If you prefer a sophisticated look, go for elegant styles.
+                        <img src="X.png" alt="Classic Hairstyle" class="hairstyle-image">
+                    </li>
+                    <li>
+                        <strong>Creative and Bold</strong>: Try edgy cuts, bright colors, or asymmetrical styles to showcase your individuality.
+                        <img src="X.png" alt="Creative Hairstyle" class="hairstyle-image">
+                    </li>
+                    <li>
+                        <strong>Laid-back and Casual</strong>: Effortless hairstyles like beachy waves or messy buns can highlight a relaxed vibe.
+                        <img src="X.png" alt="Casual Hairstyle" class="hairstyle-image">
+                    </li>
+                    <li>
+                        <strong>Professional and Polished</strong>: Choose refined styles that maintain a professional appearance.
+                        <img src="X.png" alt="Professional Hairstyle" class="hairstyle-image">
+                    </li>
+                </ul>
+            </p>
+            <h2>Considering Your Lifestyle</h2>
+            <p class="blog-content">
+                Finally, think about your daily routine when selecting a hairstyle. 
+                If you lead a busy lifestyle, opt for low-maintenance cuts. If you enjoy experimenting with different looks, consider versatile hairstyles.
+            </p>
+            <h2>Tips for Finding the Perfect Hairstyle</h2>
+            <p class="blog-content">
+                - <strong>Consult a Professional</strong>: A hairstylist can help you choose a style that suits your face shape, personality, and lifestyle. <br>
+                - <strong>Use Online Resources</strong>: Explore apps that allow you to upload your photo and try on different hairstyles virtually. <br>
+                - <strong>Experiment</strong>: Don’t be afraid to try different styles.
+            </p>
+            <h2>Conclusion</h2>
+            <p class="blog-content">
+                Choosing the right hairstyle is an important decision that can enhance your overall appearance and boost your confidence. 
+                By considering your face shape, personality, and lifestyle, you can discover a hairstyle that not only looks great but also feels like you. 
+                Whether you’re going for a dramatic change or a subtle update, remember that the best hairstyle is one that makes you feel your best!
+            </p>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <a class="logolink" href="landing.html">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Stylish Nest Logo">
+                    <div class="horizontal-line"></div> 
+                    <h1 class="site-title">Stylishnest</h1> 
+                </div>
+            </a>
+            <div class="vertical-line"></div>
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">Consultation</a></li>
+                    <li><a href="terms.html">Terms and Agreements</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p>123 Barber St, Hairville, HT 12345</p>
+                <p>Email: info@stylishnest.com | Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-social-media">
+                <h2>Follow Us</h2>
+                <li><a href="#">Facebook</a></li>
+                <br>
+                <li><a href="#">Instagram</a></li>
+                <br>
+                <li><a href="#">Twitter</a></li>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Stylishnest. All rights reserved.</p>
+        </div>
+    </footer> 
+</body>
+</html>

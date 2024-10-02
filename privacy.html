@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Privacy Policy - Stylishnest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond';
+            font-weight: 500;
+            font-size: 3.5em;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2c4f44;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        nav::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #b18b67, #cd7f32);
+            position: absolute;
+            bottom: -12px;
+        }
+
+        .logo-link {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-link:hover {
+            text-decoration: none; 
+        }
+
+        .logo-link img {
+            margin-right: 10px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .navlogo {
+            max-width: 150px;
+            margin-right: 10px;
+        }
+
+        .logo-container h1 {
+            color: white;
+            margin: 0;
+            font-size: 1.8em;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .privacy-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .privacy-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 1.8em;
+            font-weight: 500;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #2c4f44 0%, #1a2e28 100%);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            color: #cd7f32;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .logo-container h1 {
+                font-size: 1.5em;
+                letter-spacing: 3px;
+            }
+
+            .privacy-content {
+                font-size: 16px;
+            }
+
+            .privacy-container {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .logo-container h1 {
+                font-size: 1.2em;
+                letter-spacing: 2px;
+            }
+
+            .navlogo {
+                max-width: 100px;
+            }
+
+            .privacy-container {
+                padding: 15px;
+            }
+
+            .privacy-content {
+                font-size: 14px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+        footer {
+            background: linear-gradient(135deg, #2c4f44 0%, #1a2e28 100%);
+            color: #ffffff;
+            padding: 20px 10px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .footer-logo img {
+            max-width: 40%;
+            height: auto;
+        }
+
+        .logolink {
+            text-decoration: none;
+        }
+
+        .vertical-line {
+            height: 18em;
+            width: 2px;
+            background-color: white;
+            margin-left: -6em;
+            margin-right: 2em;
+            margin-bottom: -2.5em;
+        }
+
+        .site-title {
+            font-size: 1.8em;
+            color: white;
+            text-align: center; 
+            margin-top: 10px; 
+            font-weight: 200;
+        }
+
+        .footer-links, .footer-contact, .footer-social-media {
+            flex: 1;
+            min-width: 150px;
+            margin: 10px;
+            font-size: 1.1em;
+        }
+
+        .footer-links h2, .footer-contact h2, .footer-social-media h2 {
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .footer-social-media ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-social-media li {
+            list-style-type: none;
+            margin-bottom: -0.5em;
+            margin-left: -0.6em;
+        }
+
+        .footer-links a, .footer-social-media a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover::after {
+            width: 120%;
+            left: -10%;
+        }
+
+        .footer-social-media a {
+            position: relative;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a {
+            position: relative;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .footer-links a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .footer-social-media a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .footer-social-media a:hover::after {
+            width: 120%;
+            left: -10%;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .horizontal-line {
+            display: none;
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            margin: 15px 0;
+        }
+
+        .footer-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 1300px) and (min-width: 750px) {
+            .vertical-line {
+                height: 18em;
+                width: 2px;
+                background-color: white;
+                margin-left: 2em;
+                margin-right: 5em;
+                margin-bottom: -2.5em;
+            }
+
+            .footer-logo img {
+                max-width: 80%;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .footer-container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .footer-logo {
+                max-width: 60%;
+                margin-top: 3em;
+            }
+
+            .footer-logo img {
+                max-width: 80%;
+            }
+
+            .vertical-line {
+                height: 18em;
+                width: 2px;
+                background-color: white;
+                margin-left: 2em;
+                margin-right: 5em;
+                margin-bottom: -2.5em;
+            }
+
+            .site-title {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-logo {
+                margin-bottom: 15px;
+            }
+
+            .footer-logo img {
+                max-width: 50%;
+            }
+
+            .vertical-line {
+                display: none;
+            }
+
+            .site-title {
+                text-align: center;
+                margin-top: 10px; 
+            }
+
+            .footer-links, .footer-contact, .footer-social-media {
+                margin: 15px 0;
+                text-align: center;
+            }
+
+            .horizontal-line {
+                display: block; 
+            }
+        }
+
+        .footer-social-media a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #ccc; 
+        }
+
+        @media (min-width: 850px) and (max-width: 1280px) {
+            .footer-social-media {
+                margin-left: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="landing.html" class="logo-link">
+                    <img src="logo.png" alt="Logo" class="navlogo">
+                    <h1>STYLISHNEST</h1>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="privacy-container">
+        <h1>Privacy Policy</h1>
+        <div class="privacy-content">
+            <p>Welcome to the Stylishnest website (the “site”). By accessing the site, you agree that you have read, understand, acknowledge, and agree to comply with our Privacy Policy. The terms “Stylishnest” or “us” or “we” or “our” refer to Stylishnest Holdings and its subsidiaries, affiliates, partners, agents, attorneys, officers, directors, and employees. The terms “you” or “your” refer to the user or viewer of the site. We reserve the right to terminate or suspend your ability to use or access the site or any portion thereof for any reason whatsoever.</p>
+
+            <h2>Applicable Law / Jurisdiction / Venue</h2>
+            <p>The Privacy Policy was created in the Philippines and shall be treated as though it were executed and performed there, and shall be governed by and construed in accordance with the laws of the Philippines, without regard to conflict of law principles. You agree that any claim or dispute you may have arising out of or related to the site, including, without limitation, your use of the site, the site’s contents and materials, information you provided to the site, and/or the Privacy Policy, and any legal notices on this site, must be instituted within one (1) year after the claim arose or be forever waived and barred.</p>
+
+            <h2>Promotional Events</h2>
+            <p>If you choose to take part in a promotional event, we’ll ask for any information necessary to the administration of the event, such as your name, email address, and shipping address. We may, on occasion, co-sponsor promotions with third parties. We will notify you at the time of collection if third parties will obtain your personal information.</p>
+
+            <h2>Surveys</h2>
+            <p>From time to time, we may post surveys on our site. The surveys may request demographic information (such as age range, gender, areas of interest, and familiarity with Stylishnest products and services) and customer feedback. Participation in these requests is completely voluntary, and with each request, you will have the choice of whether or not to disclose information. Such survey information will be used to improve the overall experience offered at Stylishnest.</p>
+
+            <h2>Aggregate Information</h2>
+            <p>We collect aggregate information about you and your use of our site whenever you visit us online. For instance, we may collect various forms of “click stream” information, such as entry and exit points for the site, traffic statistics, page views, impressions, operating system, and browser type. This aggregate information generally will not personally identify you or be correlated to you individually for external purposes.</p>
+
+            <h2>Email Updates</h2>
+            <p>Unless we hear from you otherwise, we’ll email you occasional updates about new additions to this site or special offers you can take advantage of at Stylishnest. If at any time you decide you’d rather not receive this type of information from us, simply “opt out” of such communication in the email and select the option to be removed from email updates/promotions.</p>
+
+            <h2>Disclosures</h2>
+            <p>We do not share any of your personal information with others. Stylishnest reserves the right to use or disclose any information as needed to satisfy any law, regulation, or legal request, to protect the integrity of the site, or to cooperate in any law enforcement investigation or a matter of public safety.</p>
+
+            <h2>Children's Information</h2>
+            <p>Stylishnest recognizes the need to provide additional privacy protection to children. Children 12 years old and younger may visit Stylishnest.com without disclosing any personally identifiable information. However, it is sometimes necessary to collect some personally identifiable information about children to allow them to use certain features of our site.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We encourage you to review it regularly for any changes. Your continued use of our website after changes are posted will be considered acceptance of those changes.</p>
+
+            <p>If you have any questions regarding this Privacy Policy, please contact us at <a href="mailto:info@Stylishnest.com">info@Stylishnest.com</a>.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <a class="logolink" href="landing.html">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Stylish Nest Logo">
+                    <div class="horizontal-line"></div> 
+                    <h1 class="site-title">Stylishnest</h1> 
+                </div>
+            </a>
+            <div class="vertical-line"></div>
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">Consultation</a></li>
+                    <li><a href="terms.html">Terms and Agreements</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p>123 Barber St, Hairville, HT 12345</p>
+                <p>Email: info@stylishnest.com | Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-social-media">
+                <h2>Follow Us</h2>
+                <li><a href="#">Facebook</a></li>
+                <br>
+                <li><a href="#">Instagram</a></li>
+                <br>
+                <li><a href="#">Twitter</a></li>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Stylishnest. All rights reserved.</p>
+        </div>
+    </footer> 
+
+</body>
+
+</html>

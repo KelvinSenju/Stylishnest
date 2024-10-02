@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.left-half {
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #2c4f44 0%, #1a2e28 100%);
+    color: #2E2E2E;
+    text-align: center;
+}
+
+.left-half h2 {
+    margin: 0;
+    color: white;
+    font-size: 3.5em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+blockquote {
+    margin: 20px 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.form-container {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-box {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 350px;
+    max-width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-switch {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 0 10px;
+    border: 2px solid #B99A83;
+    border-radius: 20px;
+    background-color: transparent;
+    height: 40px;
+    cursor: pointer;
+}
+
+.toggle-text {
+    display: flex;
+    position: relative;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: #4A3D29;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.toggle-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 20px;
+    background-color: rgba(185, 154, 131, 0.5);
+    width: 50%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.toggle-text.active {
+    color: black;
+}
+
+.toggle-text.active::before {
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+    background-color: rgba(185, 154, 131, 0.7);
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    color: #4A3D29;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #B99A83;
+}
+
+button {
+    font-family: 'cormorant-garamond-light';
+    padding: 15px 50px;
+    border: 2px solid #b18b67; 
+    border-radius: 5px;
+    background: #ffffff;
+    color: black; 
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease, color 0.3s ease; 
+    font-size: 18px;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); 
+}
+
+button:hover {
+    border-color: #b18b67; 
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); 
+}
+
+
+.social-signup {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.social-signup p {
+    color: #4A3D29;
+}
+
+.social-button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.g-recaptcha {
+    margin-bottom: 10px; 
+}
+
+.social-button.google {
+    background-color: #db4437;
+}
+
+.social-button.google:hover {
+    background-color: #c13529;
+}
+
+.social-button.facebook {
+    background-color: #4267B2;
+}
+
+.social-button.facebook:hover {
+    background-color: #365899;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-half,
+    .form-container {
+        flex: 1 1 100%;
+    }
+
+    .left-half h2 {
+        font-size: 2em;
+    }
+
+    .form-box {
+        width: 90%;
+        max-width: none;
+    }
+
+    @media (max-width: 480px) {
+        .left-half h2 {
+            font-size: 1.5em;
+        }
+
+        blockquote {
+            font-size: 1em;
+        }
+
+        .toggle-button {
+            height: 35px;
+        }
+
+        .toggle-text {
+            font-size: 16px;
+        }
+
+        button,
+        .social-button {
+            font-size: 14px;
+        }
+    }
+}
